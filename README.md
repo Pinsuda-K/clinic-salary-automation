@@ -1,6 +1,5 @@
 # clinic-salary-automation
-# Clinic Salary & Income Automation System
-
+## Clinic Salary & Income Automation System
 This project aims to automate the internal tracking of staff working hours, calculate monthly salaries, and summarize clinic income using Google Forms, Google Sheets, Make.com, N8N and ChatGPT. The automation helps to reduce manual tasks, increase transparency, and allow for quicker decision-making.
 
 ---
