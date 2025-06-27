@@ -19,28 +19,23 @@ This project aims to automate the internal tracking of staff working hours, calc
 - Optionally use ChatGPT to generate a report like:
   > “In June, total clinic revenue was ฿84,200. Dr. A contributed ฿48,000 (57%).”
 
-## 🛠️ Tech Stack
-
+### Tech Stack
 - **Google Forms** – Input working hours & treatment info
 - **Google Sheets** – Central data storage & calculations
 - **Make.com / n8n** – Workflow automation
 - **ChatGPT API (OpenAI)** – Income summary generation
 - **[Optional] Google Apps Script** – Custom logic (e.g., timestamp, validation)
 - **[Optional] Looker Studio** – Visual income dashboard
-
 ---
-
-## Sample Data Structure
+### Sample Data Structure
 
 | Date | Name | Role | Start | End | Patients | Service | Income |
 |------|------|------|-------|-----|----------|---------|--------|
 | 2025-06-26 | Dr. A | Doctor | 09:00 | 12:00 | 5 | Consultation | 3,000 |
 | 2025-06-26 | Staff B | Reception | 09:00 | 17:00 | – | – | – |
-
 ---
 
-## Workflow (High-Level)
-
+### Workflow (High-Level)
 1. Therapist or staff submits Google Form
 2. Data updates Google Sheet
 3. Make.com/n8n scenario runs:
@@ -49,16 +44,13 @@ This project aims to automate the internal tracking of staff working hours, calc
    - (Optional) Uses GPT to summarize insights
 4. Report or message sent via email / LINE
 
----
 
-## 🔐 Data Privacy Note
+###  Data Privacy Note
 
 > All datasets used in this repository are anonymized or simulated. No real personal, financial, or patient information is shared publicly in this project. The real implementation is deployed privately.
 
----
 
-## Current Status
-
+### Current Status
 - [x] Project planning
 - [x] Google Form structure drafted
 - [ ] Sample salary rule table
@@ -66,18 +58,13 @@ This project aims to automate the internal tracking of staff working hours, calc
 - [ ] Integration with ChatGPT (pending)
 - [ ] Summary report prototype
 
----
-
-## What I'm Learning
-
+### What I'm Learning
 - Automation design with Make.com
 - Structuring logic-based salary calculations
 - Integrating AI tools for business reporting
 - Building modular and scalable workflows
 
 ---
-
-## .gitignore (Python-Based)
-
+#### .gitignore (Python-Based)
 Your current `.gitignore` might look like this if you're using Python for any part of the automation:
 
