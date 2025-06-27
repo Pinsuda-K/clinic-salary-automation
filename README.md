@@ -1,32 +1,23 @@
-# clinic-salary-automation
-## Clinic Salary & Income Automation System
+#### clinic-salary-automation
+### Clinic Salary & Income Automation System
 This project aims to automate the internal tracking of staff working hours, calculate monthly salaries, and summarize clinic income using Google Forms, Google Sheets, Make.com, N8N and ChatGPT. The automation helps to reduce manual tasks, increase transparency, and allow for quicker decision-making.
 
----
-
-## Objective
-
+### Objective
 - Automate the process of salary calculation for both medical and backend staff based on form-submitted working hours and commission rules.
 - Summarize and report monthly and yearly income performance from patient service records.
 - Use automation and AI tools to generate reports and summaries, reducing human error and administrative workload.
 
----
-
-## 📍 Focus Areas
-
-### 1. **Staff Salary Automation**
+### Focus Areas
+1. **Staff Salary Automation**
 - Collect working hour submissions via Google Forms
 - Different rules for different roles (e.g., hourly + commission)
 - Automatically calculate salary totals
 - Generate staff-specific monthly summaries
-
-### 2. **Clinic Income Automation**
+2. **Clinic Income Automation**
 - Collect service income data (daily/monthly)
 - Summarize income by staff, service type, or date
 - Optionally use ChatGPT to generate a report like:
   > “In June, total clinic revenue was ฿84,200. Dr. A contributed ฿48,000 (57%).”
-
----
 
 ## 🛠️ Tech Stack
 
