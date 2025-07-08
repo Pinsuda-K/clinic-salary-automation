@@ -1,4 +1,27 @@
 #### clinic-salary-automation
+## Why I Built This
+
+As someone helping manage a physical therapy, dental, and aesthetic clinic with my sisters, I experienced firsthand how time-consuming and error-prone it can be to manually track staff attendance and calculate salaries. So in order to reduce the workload and improve efficiency, 
+
+I wanted to build a system that would:
+- Streamline daily operations
+- Ensure accuracy in payroll processing
+- Solve a real operational pain point, especially around managing dynamic shift times and payroll accuracy across multiple departments
+- Save time and minimize human error
+- Free up more time for strategic decision-making
+- Let me explore ChatGPT integration and no-code tools
+- Turn messy, unstructured data into clean, actionable insights through automation
+
+This wasn’t just a technical project — it was a real operational need in our family-run clinic, and an opportunity to bring automation and AI into practical, small-business settings.
+
+This project became both a **practical solution** for the clinic and my **personal learning journey** in automation, systems thinking, and AI-powered reporting. 
+
+This project also gave me the opportunity to:
+- Apply and improve automation logic
+- Explore no-code platforms alongside AI integration
+- Work with real data from a functioning clinic to build something that actually solves a problem
+
+
 ### Clinic Salary & Income Automation System
 This project aims to automate the internal tracking of staff working hours, calculate monthly salaries, and summarize clinic income using Google Forms, Google Sheets, Make.com, N8N and ChatGPT. The automation helps to reduce manual tasks, increase transparency, and allow for quicker decision-making.
 
@@ -18,14 +41,16 @@ This project aims to automate the internal tracking of staff working hours, calc
 - Summarize income by staff, service type, or date
 - Optionally use ChatGPT to generate a report like:
   > “In June, total clinic revenue was ฿84,200. Dr. A contributed ฿48,000 (57%).”
-
-### Tech Stack
-- **Google Forms** – Input working hours & treatment info
-- **Google Sheets** – Central data storage & calculations
-- **Make.com / n8n** – Workflow automation
-- **ChatGPT API (OpenAI)** – Income summary generation
-- **[Optional] Google Apps Script** – Custom logic (e.g., timestamp, validation)
-- **[Optional] Looker Studio** – Visual income dashboard
+---
+### 🧩 System Architecture
+```mermaid
+flowchart LR
+    Form --> Sheets
+    Sheets --> Make.com
+    Make.com --> GPT
+    GPT --> Gmail
+    Make.com --> MonthlySummary
+```
 ---
 ### Sample Data Structure
 
@@ -35,15 +60,24 @@ This project aims to automate the internal tracking of staff working hours, calc
 | 2025-06-26 | Staff B | Reception | 09:00 | 17:00 | – | – | – |
 ---
 
-### Workflow (High-Level)
-1. Therapist or staff submits Google Form
-2. Data updates Google Sheet
-3. Make.com/n8n scenario runs:
-   - Calculates salary based on rules
-   - Aggregates monthly income
-   - (Optional) Uses GPT to summarize insights
-4. Report or message sent via email / LINE
+### Workflow 
+1. Staff check in/out data is exported fingerprint time clocks in .csv format
+2. Raw data stored in Google Sheets → transformed into monthly summaries
+3. Make.com watches the sheet, calculates salary & OT based on rules, aggregates monthly income
+4. ChatGPT summarizes results in prefered language used in the organization
+5. Summarize, report or message sent to HR via email / LINE
 
+### Tech Stack & Tools
+- *Google Forms* – Input working hours & treatment info
+- *Google Sheets* – Central data storage & calculations
+- *Make.com* — no-code workflow automation
+- *ChatGPT API* — summary generation
+- *LINE* — automatic message delivery
+- *Gmail* — automatic email delivery
+- *[Optional] Google Apps Script* – Custom logic (e.g., timestamp, validation)
+- *[Optional] Looker Studio* – Visual income dashboard
+
+### Setup Instructions
 
 ###  Data Privacy Note
 
@@ -52,17 +86,20 @@ This project aims to automate the internal tracking of staff working hours, calc
 
 ### Current Status
 - [x] Project planning
-- [x] Google Form structure drafted
-- [ ] Sample salary rule table
-- [ ] Basic automation test in Make.com
-- [ ] Integration with ChatGPT (pending)
-- [ ] Summary report prototype
+- [x] Google sheet structure drafted
+- [x] Sheet formulas tested
+- [x] Make.com workflow operational
+- [x] ChatGPT integration complete
+- [ ] Income branch in development
+- [ ] GitHub Pages site WIP
 
-### What I'm Learning
-- Automation design with Make.com
-- Structuring logic-based salary calculations
-- Integrating AI tools for business reporting
-- Building modular and scalable workflows
+### 💡 What I Learned
+
+- Designing scalable automation flows with Make.com
+- Structuring logic for salary rules using formulas
+- Integrating AI with business data for dynamic reports
+- Communicating complex automation to others
+
 
 ---
 #### .gitignore (Python-Based)
