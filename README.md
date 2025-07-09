@@ -1,27 +1,27 @@
 #### clinic-salary-automation
+# Clinic Salary Automation System
+> Automates messy attendance tracking and salary calculations using Google Sheets, Make.com, and ChatGPT. Built for a real multi-department clinic to reduce admin burden, improve payroll accuracy, and generate AI-powered summaries.
+
 ## Why I Built This
 
 As someone helping manage a physical therapy, dental, and aesthetic clinic with my sisters, I experienced firsthand how time-consuming and error-prone it can be to manually track staff attendance and calculate salaries. So in order to reduce the workload and improve efficiency, 
 
 I wanted to build a system that would:
 - Streamline daily operations
-- Ensure accuracy in payroll processing
-- Solve a real operational pain point, especially around managing dynamic shift times and payroll accuracy across multiple departments
-- Save time and minimize human error
-- Free up more time for strategic decision-making
-- Let me explore ChatGPT integration and no-code tools
-- Turn messy, unstructured data into clean, actionable insights through automation
+- Reduce manual admin work through automation
+- Ensure payroll accuracy across departments and shift types
+- Save time for strategic decision-making and minimize human error
+- Let me explore ChatGPT integration and no-code tools like Make.com in a real-world solution
+- Convert messy, inconsistent time data into reliable insights
 
-This wasn’t just a technical project — it was a real operational need in our family-run clinic, and an opportunity to bring automation and AI into practical, small-business settings.
-
-This project became both a **practical solution** for the clinic and my **personal learning journey** in automation, systems thinking, and AI-powered reporting. 
+This wasn’t just a technical project — it was an operational challenge I chose to take on to improve our family-run clinic, and an opportunity to bring automation and AI into practical, small-business settings. This project became both a **practical solution** for the clinic and my **personal learning journey** in automation, systems thinking, and AI-powered reporting. 
 
 This project also gave me the opportunity to:
-- Apply and improve automation logic
+- Apply and refine automation logic in real scenarios  
 - Explore no-code platforms alongside AI integration
-- Work with real data from a functioning clinic to build something that actually solves a problem
-
-
+- Work directly with real operational data from a live clinic  
+- Build a system that combines technical implementation with business impact
+  
 ### Clinic Salary & Income Automation System
 This project aims to automate the internal tracking of staff working hours, calculate monthly salaries, and summarize clinic income using Google Forms, Google Sheets, Make.com, N8N and ChatGPT. The automation helps to reduce manual tasks, increase transparency, and allow for quicker decision-making.
 
@@ -42,7 +42,16 @@ This project aims to automate the internal tracking of staff working hours, calc
 - Optionally use ChatGPT to generate a report like:
   > “In June, total clinic revenue was ฿84,200. Dr. A contributed ฿48,000 (57%).”
 ---
-### 🧩 System Architecture
+### Impact
+
+- Saved 8+ hours/month of manual salary calculation
+- Reduced human error in attendance-based payroll
+- Built real-time, scalable backend for a growing clinic team
+- Adaptable to other small-medium businesses needing HR automation
+
+---
+### System Architecture
+> End-to-end data and automation flow using no-code and AI.
 ```mermaid
 flowchart LR
     Form --> Sheets
@@ -50,7 +59,16 @@ flowchart LR
     Make.com --> GPT
     GPT --> Gmail
     Make.com --> MonthlySummary
+
+---
+
+#### 5. **Add tags / badges** near the top (optional, but stylish):
+
 ```
+markdown
+![Status](https://img.shields.io/badge/status-in%20progress-yellow)
+![Tech](https://img.shields.io/badge/tools-Make.com%20%7C%20ChatGPT%20%7C%20GoogleSheets-blue)
+
 ---
 ### Sample Data Structure
 
@@ -77,7 +95,7 @@ flowchart LR
 - *[Optional] Google Apps Script* – Custom logic (e.g., timestamp, validation)
 - *[Optional] Looker Studio* – Visual income dashboard
 
-### Setup Instructions
+### Project Instructions
 
 ###  Data Privacy Note
 
