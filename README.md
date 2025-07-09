@@ -1,5 +1,10 @@
 #### clinic-salary-automation
 # Clinic Salary Automation System
+```markdown
+![Status](https://img.shields.io/badge/status-in%20progress-yellow)
+![Tech](https://img.shields.io/badge/tools-Make.com%20%7C%20ChatGPT%20%7C%20GoogleSheets-blue)
+![Language](https://img.shields.io/badge/language-Thai%20%2F%20English-orange)
+```
 > Automates messy attendance tracking and salary calculations using Google Sheets, Make.com, and ChatGPT. Built for a real multi-department clinic to reduce admin burden, improve payroll accuracy, and generate AI-powered summaries.
 
 ## Why I Built This
@@ -59,16 +64,7 @@ flowchart LR
     Make.com --> GPT
     GPT --> Gmail
     Make.com --> MonthlySummary
-
----
-
-#### 5. **Add tags / badges** near the top (optional, but stylish):
-
 ```
-markdown
-![Status](https://img.shields.io/badge/status-in%20progress-yellow)
-![Tech](https://img.shields.io/badge/tools-Make.com%20%7C%20ChatGPT%20%7C%20GoogleSheets-blue)
-
 ---
 ### Sample Data Structure
 
