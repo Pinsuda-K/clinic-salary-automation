@@ -58,11 +58,21 @@ This project aims to automate the internal tracking of staff working hours, calc
 > End-to-end data and automation flow using no-code and AI.
 ```mermaid
 flowchart LR
-    Form --> Sheets
-    Sheets --> Make.com
-    Make.com --> GPT
-    GPT --> Gmail
-    Make.com --> MonthlySummary
+    subgraph Staff Inputs
+        Form[Google Form (optional)]
+        Clock[Time Clock CSV]
+    end
+
+    subgraph Processing
+        Clock --> Sheets[Google Sheets (Raw Attendance)]
+        Sheets --> Monthly[Monthly Summary Sheet]
+        Monthly --> Make[Make.com Scenario]
+    end
+
+    subgraph Automation
+        Make --> GPT[ChatGPT Summary]
+        GPT --> Email[Gmail / LINE Notification]
+    end
 ```
 ---
 ### Sample Data Structure
