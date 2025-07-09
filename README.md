@@ -1,6 +1,5 @@
 #### clinic-salary-automation
 # Clinic Salary Automation System
-markdown
 ![Status](https://img.shields.io/badge/status-in%20progress-yellow)
 ![Tech](https://img.shields.io/badge/tools-Make.com%20%7C%20ChatGPT%20%7C%20GoogleSheets-blue)
 ![Language](https://img.shields.io/badge/language-Thai%20%2F%20English-orange)
