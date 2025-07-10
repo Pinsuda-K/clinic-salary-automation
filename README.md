@@ -26,7 +26,7 @@ This project also gave me the opportunity to:
 - Work directly with real operational data from a live clinic  
 - Build a system that combines technical implementation with business impact
   
-### Clinic Salary & Income Automation System
+## Project Overview
 This project aims to automate the internal tracking of staff working hours, calculate monthly salaries, and summarize clinic income using Google Forms, Google Sheets, Make.com, N8N and ChatGPT. The automation helps to reduce manual tasks, increase transparency, and allow for quicker decision-making.
 
 ### Objective
@@ -58,29 +58,47 @@ This project aims to automate the internal tracking of staff working hours, calc
 > End-to-end data and automation flow using no-code and AI.
 ```mermaid
 flowchart LR
-    subgraph Staff Inputs
-        Form[Google Form (optional)]
-        Clock[Time Clock CSV]
-    end
-
-    subgraph Processing
-        Clock --> Sheets[Google Sheets (Raw Attendance)]
-        Sheets --> Monthly[Monthly Summary Sheet]
-        Monthly --> Make[Make.com Scenario]
-    end
-
-    subgraph Automation
-        Make --> GPT[ChatGPT Summary]
-        GPT --> Email[Gmail / LINE Notification]
-    end
+    Form --> Sheets
+    Sheets --> Make.com
+    Make.com --> GPT-4o
+    GPT-4o --> Gmail
+    GPT-4o --> LINE
+    Make.com --> Monthly_Summary
 ```
 ---
 ### Sample Data Structure
+The system relies on multiple structured Google Sheets to separate concerns:
+#### 1. `raw_attendance`
+Stores daily attendance and shift info from Google Forms or manual entry.
 
-| Date | Name | Role | Start | End | Patients | Service | Income |
-|------|------|------|-------|-----|----------|---------|--------|
-| 2025-06-26 | Dr. A | Doctor | 09:00 | 12:00 | 5 | Consultation | 3,000 |
-| 2025-06-26 | Staff B | Reception | 09:00 | 17:00 | – | – | – |
+| emp_ID | day | month | year | full_name | check_in | check_out | OT_min | late_min |
+|--------|--------|-------|----|--------------|-----------|------------|--------|----------|
+| EMP001 | 01     | 1     | 2023 | Warit Sritong | 09:05 | 18:30 | 90     | 5        |
+---
+#### 2. `staff_profile`
+Reference sheet for employee details and fixed salary components.
+
+| emp_ID | nick_name | position | salary | allowance | meal_allowance |
+|--------|----------|-------------|-----------|------------|----------|
+| EMP001 | Por      | Cleaner      | 10,000     | 500       | 500      |
+---
+
+#### 3. `monthly_sum_attendance`
+Aggregates total OT, lateness, and working days per staff per month.
+
+| emp_ID | month | year | sum total_OT_min | sum late_min | count_days |
+|--------|--------|----|-------------------|---------------|---------------|
+| EMP001 | 1     | 2023 | 884               | 1             | 26            |
+---
+
+#### 4. `monthly_salary_sum`
+Final salary calculations and summaries after formulas and GPT integration.
+
+| emp_ID | month | year | nickname | OT_pay | late_deductions | total_salary |
+|--------|--------|----|-------|--------|------------------|---------------|
+| EMP001 | 1     | 2023 | Por   | 884 | -1.00           | 10,550   |
+---
+> All sheets are connected through Make.com automation and processed for GPT-based summary delivery via email or LINE.
 ---
 
 ### Workflow 
