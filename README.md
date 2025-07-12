@@ -29,10 +29,11 @@ This project also gave me the opportunity to:
 ## Project Overview
 This project aims to automate the internal tracking of staff working hours, calculate monthly salaries, and summarize clinic income using Google Forms, Google Sheets, Make.com, N8N and ChatGPT. The automation helps to reduce manual tasks, increase transparency, and allow for quicker decision-making.
 
+## Project Scope and Goals
 ### Objective
-- Automate the process of salary calculation for both medical and backend staff based on form-submitted working hours and commission rules.
-- Summarize and report monthly and yearly income performance from patient service records.
-- Use automation and AI tools to generate reports and summaries, reducing human error and administrative workload.
+- Automate salary calculations for both medical and admin staff using submitted working hours, OT, and lateness.
+- Summarize monthly and yearly clinic income using staff service records.
+- Leverage automation and AI to reduce manual admin tasks, minimize errors, and improve payroll accuracy.
 
 ### Focus Areas
 1. **Staff Salary Automation**
@@ -44,7 +45,7 @@ This project aims to automate the internal tracking of staff working hours, calc
 - Collect service income data (daily/monthly)
 - Summarize income by staff, service type, or date
 - Optionally use ChatGPT to generate a report like:
-  > “In June, total clinic revenue was ฿84,200. Dr. A contributed ฿48,000 (57%).”
+  > “In June, total clinic revenue was 84,200 Baht. Dr. A contributed 48,000 Baht (57%).”
 ---
 ### Impact
 
@@ -99,6 +100,10 @@ Final salary calculations and summaries after formulas and GPT integration.
 | EMP001 | 1     | 2023 | Por   | 884 | -1.00           | 10,550   |
 ---
 > All sheets are connected through Make.com automation and processed for GPT-based summary delivery via email or LINE.
+> This project simulates real-world payroll processing based on structured attendance data from a functioning clinic. While actual payroll figures may include unrecorded manual adjustments, the system demonstrates scalable logic and automation workflows that:
+> - Calculate OT and lateness deductions
+> - Generate GPT-powered monthly summaries
+> - Lay a foundation for further HR and business insights
 ---
 
 ### Workflow 
@@ -123,6 +128,7 @@ Final salary calculations and summaries after formulas and GPT integration.
 ###  Data Privacy Note
 
 > All datasets used in this repository are anonymized or simulated. No real personal, financial, or patient information is shared publicly in this project. The real implementation is deployed privately.
+
 
 
 ### Current Status
