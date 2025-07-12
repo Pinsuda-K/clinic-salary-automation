@@ -123,7 +123,12 @@ Final salary calculations and summaries after formulas and GPT integration.
 - *[Optional] Google Apps Script* – Custom logic (e.g., timestamp, validation)
 - *[Optional] Looker Studio* – Visual income dashboard
 
-### Project Instructions
+### 📸 Monthly Summary Sheet
+
+This sheet summarizes each staff's OT, lateness, and total salary, calculated automatically.
+
+![Monthly Salary Sheet](./images/sheet_output_png/monthly_sum_salary_(Eng).png)
+
 
 ###  Data Privacy Note
 
