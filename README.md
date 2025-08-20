@@ -6,7 +6,7 @@
 
 > Automates messy attendance tracking and salary calculations using Google Sheets, Make.com, and ChatGPT. Built for a real multi-department clinic to reduce admin burden, improve payroll accuracy, and generate AI-powered summaries.
 
-## Why I Built This
+### Why I Built This
 
 As someone helping manage a physical therapy, dental, and aesthetic clinic with my sisters, I experienced firsthand how time-consuming and error-prone it can be to manually track staff attendance and calculate salaries. So in order to reduce the workload and improve efficiency, 
 
@@ -26,11 +26,11 @@ This project also gave me the opportunity to:
 - Work directly with real operational data from a live clinic  
 - Build a system that combines technical implementation with business impact
   
-## Project Overview
+### Project Overview
 This project aims to automate the internal tracking of staff working hours, calculate monthly salaries, and summarize clinic income using Google Forms, Google Sheets, Make.com, N8N and ChatGPT. The automation helps to reduce manual tasks, increase transparency, and allow for quicker decision-making.
 
-## Project Scope and Goals
-### Objective
+### Project Scope and Goals
+#### Objective
 - Automate salary calculations for both medical and admin staff using submitted working hours, OT, and lateness.
 - Summarize monthly and yearly clinic income using staff service records.
 - Leverage automation and AI to reduce manual admin tasks, minimize errors, and improve payroll accuracy.
