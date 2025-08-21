@@ -8,7 +8,7 @@
 
 ### Why I Built This
 
-As someone helping manage a physical therapy, dental, and aesthetic clinic with my sisters, I experienced firsthand how time-consuming and error-prone it can be to manually track staff attendance and calculate salaries. So in order to reduce the workload and improve efficiency, 
+As someone helping manage a physical therapy, dental, and aesthetic clinic, I experienced firsthand how time-consuming and error-prone it can be to manually track staff attendance and calculate salaries. So in order to reduce the workload and improve efficiency, 
 
 I wanted to build a system that would:
 - Streamline daily operations
@@ -18,7 +18,7 @@ I wanted to build a system that would:
 - Let me explore ChatGPT integration and no-code tools like Make.com in a real-world solution
 - Convert messy, inconsistent time data into reliable insights
 
-This wasn’t just a technical project — it was an operational challenge I chose to take on to improve our family-run clinic, and an opportunity to bring automation and AI into practical, small-business settings. This project became both a **practical solution** for the clinic and my **personal learning journey** in automation, systems thinking, and AI-powered reporting. 
+This wasn’t just a technical project — it was an operational challenge I chose to improve the efficiency of clinic, and an opportunity to bring automation and AI into practical, small-business settings. This project became both a **practical solution** for the clinic and my **personal learning journey** in automation, systems thinking, and AI-powered reporting. 
 
 This project also gave me the opportunity to:
 - Apply and refine automation logic in real scenarios  
