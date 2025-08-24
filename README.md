@@ -123,10 +123,26 @@ Final salary calculations and summaries after formulas and GPT integration.
 - *[Optional] Google Apps Script* – Custom logic (e.g., timestamp, validation)
 - *[Optional] Looker Studio* – Visual income dashboard
 
-### Monthly Summary Sheet
-This sheet summarizes each staff's OT, lateness, and total salary, calculated automatically.
-![Monthly Salary Sheet](./images/sheet_output_png/monthly_sum_salary_(Eng).png)
-![Staff Profile References](./images/sheet_raw_png/staff_profile_(Eng).png)
+Monthly Summary Sheet:
+> This sheet summarizes each staff's OT, lateness, and total salary, calculated automatically.
+![Monthly Salary Sheet EN](./images/sheet_output_png/monthly_sum_salary_(Eng).png)
+![Monthly Salary Sheet TH](./images/sheet_output_png/monthly_sum_salary_(Thai).png)
+
+Sum Attendance:
+> This sheet shows sum of each staff's OT, lateness, calculated automatically.
+![Sum Attendance EN](./images/sheet_output_png/monthly_sum_attendance_(Eng).png)
+![Sum Attendance TH](./images/sheet_output_png/monthly_sum_attendance_(Thai).png)
+---
+Raw Data:
+> This sheet depicts raw data attendance.
+![Raw Data EN](./images/sheet_raw_png/raw_attendance_(Eng).png)
+![Raw Data TH](./images/sheet_raw_png/raw_attendance_(Thai).png)
+
+Reference Profile:
+> This sheet shows each current staff's profile as a reference.
+![Staff Profile EN](./images/sheet_raw_png/staff_profile_(Eng).png)
+![Staff Profile TH](./images/sheet_raw_png/staff_profile_(Thai).png)
+
 ---
 ###  Data Privacy Note
 > All datasets used in this repository are anonymized or simulated. No real personal, financial, or patient information is shared publicly in this project. The real implementation is deployed privately.
